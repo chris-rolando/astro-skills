@@ -1,3 +1,8 @@
+# contact info
+
+Un simple formulario con datos de cotantacto
+#template
+
 # Astro Starter Kit: Basics
 
 ```sh
