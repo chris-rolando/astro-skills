@@ -1,0 +1,16 @@
+.contact-info {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+  margin-top: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
+}
+
+.contact-info i {
+  margin-right: var(--spacing-small);
+  color: var(--color-primary);
+}
