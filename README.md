@@ -1,53 +1,85 @@
-# contact info
+# Contact Info
 
-Un simple formulario con datos de cotantacto
-#template
+Un proyecto desarrollado con [Astro](https://astro.build) que incluye dos componentes principales: uno para mostrar información de contacto y otro para un formulario interactivo. También incorpora un mapa embebido de Google Maps.
 
-# Astro Starter Kit: Basics
+## 🚀 Estructura del Proyecto
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+La estructura del proyecto es la siguiente:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
+```plaintext
 /
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── assets/
+│   │   ├── astro.svg
+│   │   └── background.svg
+│   ├── components/
+│   │   ├── Welcome.astro
+│   │   ├── ContactInfoCard/
+│   │   │   ├── [ContactInfoCard.astro](http://_vscodecontentref_/1)
+│   │   │   └── [ContactInfoCard.module.css](http://_vscodecontentref_/2)
+│   │   ├── ContactForm/
+│   │   │   ├── [ContactForm.astro](http://_vscodecontentref_/3)
+│   │   │   └── [ContactForm.module.css](http://_vscodecontentref_/4)
 │   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   │   └── [MainLayout.astro](http://_vscodecontentref_/5)
+│   ├── pages/
+│   │   └── index.astro
+│   └── styles/
+│       ├── [global.css](http://_vscodecontentref_/6)
+│       └── [reset.css](http://_vscodecontentref_/7)
+├── [package.json](http://_vscodecontentref_/8)
+└── [README.md](http://_vscodecontentref_/9)
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🌟 Componentes
+ContactInfoCard
+Este componente muestra información de contacto, incluyendo:
 
-## 🧞 Commands
+Dirección física.
+Número de teléfono.
+Correo electrónico.
+Un mapa embebido de Google Maps.
+Ubicación del archivo:
+src/components/ContactInfoCard/ContactInfoCard.astro
 
-All commands are run from the root of the project, from a terminal:
+ContactForm
+Este componente es un formulario interactivo que permite a los usuarios enviar consultas. Incluye los siguientes campos:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Nombre.
+Correo electrónico.
+Título.
+Mensaje.
+Ubicación del archivo:
+src/components/ContactForm/ContactForm.astro
 
-## 👀 Want to learn more?
+## 🧞 Comandos
+Todos los comandos se ejecutan desde la raíz del proyecto:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Comando	Acción
+pnpm install	Instala las dependencias del proyecto
+pnpm dev	Inicia el servidor de desarrollo en localhost:4321
+pnpm build	Genera el sitio para producción en ./dist/
+pnpm preview	Previsualiza el sitio generado localmente
+
+## 📦 Dependencias
+Este proyecto utiliza las siguientes dependencias principales:
+
+Astro - Framework para construir sitios web rápidos.
+Material Symbols - Iconos utilizados en la información de contacto.
+
+## 🛠️ Cómo usar
+Clona este repositorio:
+
+Instala las dependencias:
+
+Inicia el servidor de desarrollo:
+
+Abre tu navegador en http://localhost:4321.
+
+## 📖 Documentación
+Para más información sobre Astro, consulta la documentación oficial.
+
+## 📝 Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
