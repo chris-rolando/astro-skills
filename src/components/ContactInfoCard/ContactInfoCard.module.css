@@ -1,16 +1,36 @@
 .contact-info {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  padding: 1.25rem; /* Equivalente aproximado a 20px si font-size base es 16px */
+}
+
+.contact-info h2 {
+  font-size: 1.5rem; /* Equivalente aproximado a 24px */
+  font-weight: 700; /* Usa el valor numérico para consistencia */
+  margin-bottom: 1rem; /* Equivalente aproximado a 10px */
 }
 
 .contact-info p {
-  margin-top: var(--spacing-small);
-  margin-bottom: var(--spacing-small);
+  margin-bottom: 0.625rem; /* Equivalente aproximado a 10px */
+  font-size: 1rem; /* Equivalente a 16px */
+  display: flex;
+  align-items: center;
+  margin: 0.75rem 0;
+  color: #222;
 }
 
-.contact-info i {
-  margin-right: var(--spacing-small);
-  color: var(--color-primary);
+.material-symbols-outlined {
+  font-size: 1.5rem; /* Equivalente aproximado a 24px */
+  color: #ff2c00;
+  vertical-align: middle;
+  margin-right: 0.625rem; /* Equivalente aproximado a 10px */
 }
+
+/* Manteniendo el estilo para la etiqueta <i> si la usas en otro lugar */
+.contact-info i {
+  color: #ff2c00;
+  margin-right: 1rem; /* Equivalente aproximado a 7.5px */
+  font-size: 1.2rem;
+}
+
+/* Manteniendo el estilo para la etiqueta .material-icons si la usas en otro lugar */
+
