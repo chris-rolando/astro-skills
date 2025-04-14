@@ -2,7 +2,7 @@
 
 .testimonialsSection {
     background-color: #f9f9f9; /* Color específico */
-    padding: var(--padding-large) var(--padding-medium); /* 3rem 2rem */
+    padding: var(--padding-large) var(--padding-xl); /* 3rem 2rem */
     text-align: center;
   }
   
@@ -21,25 +21,37 @@
   
   .testimonialCard {
     background-color: #fff; /* Color específico */
-    padding: calc(var(--padding-small) * 2); /* 1.5rem */
+    padding: var(--padding-xl); /* 2rem */
     border-radius: var(--spacing-large); /* 1rem */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Valor específico */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05); /* Valor específico */
     max-width: 300px; /* Valor específico */
-    text-align: left;
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 64px; /* Valor específico */
+    height: 64px; /* Valor específico */
+    border-radius: 50%; /* Valor específico */
+    object-fit: cover; /* Valor específico */
+    margin-bottom: var(--spacing-large); /* 1rem */
   }
   
   .message {
-    font-style: italic;
+    font-style: italic; /* Valor específico */
     margin-bottom: var(--spacing-large); /* 1rem */
+  }
+  
+  .rating {
+    margin-bottom: var(--spacing-medium); /* 0.5rem */
   }
   
   .name {
     font-weight: var(--font-weight-bold);
     color: #333; /* Color específico */
   }
-  
+
   .testimonialCard:hover {
-    border: 1px solid var(--primary-color); /* Borde con color primario */
-    cursor: pointer; /* Indica interactividad */
-    transition: border-color var(--transition-duration) var(--transition-easing); /* Animación suave */
+    border: 1px solid var(--primary-color); /* Añade un borde de tu color primario */
+    cursor: pointer; /* Indica que es interactivo (opcional) */
+    transition: border-color 0.3s ease-in-out; /* Animación suave (opcional) */
   }
