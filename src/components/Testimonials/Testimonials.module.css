@@ -1,0 +1,45 @@
+/* TestimonialsSection.module.css */
+
+.testimonialsSection {
+    background-color: #f9f9f9; /* Un color específico, no una variable global */
+    padding: var(--padding-large) var(--padding-medium); /* 3rem 2rem */
+    text-align: center;
+  }
+  
+  .testimonialsSection h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-large);
+  }
+  
+  .testimonialsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl); /* 2rem */
+    justify-content: center;
+  }
+  
+  .testimonialCard {
+    background-color: #fff; /* Blanco específico */
+    padding: calc(var(--padding-small) * 2); /* 1.5rem */
+    border-radius: var(--spacing-large); /* 1rem */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Valor específico */
+    max-width: 300px; /* Valor específico */
+    text-align: left;
+  }
+  
+  .message {
+    font-style: italic;
+    margin-bottom: var(--spacing-large); /* 1rem */
+  }
+  
+  .name {
+    font-weight: var(--font-weight-bold);
+    color: #333; /* Un color específico, no una variable global */
+  }
+
+  .testimonialCard:hover {
+    border: 1px solid var(--primary-color); /* Añade un borde de tu color primario */
+    cursor: pointer; /* Indica que es interactivo (opcional) */
+    transition: border-color 0.3s ease-in-out; /* Animación suave (opcional) */
+  }

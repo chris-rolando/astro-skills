@@ -1,0 +1,31 @@
+---
+// Testimonials.astro
+import styles from './Testimonials.module.css';
+
+const testimonials = [
+  {
+    name: "Juan Pérez",
+    message: "Excelente servicio, me respondieron muy rápido y fueron súper amables.",
+  },
+  {
+    name: "María López",
+    message: "El equipo fue muy profesional y resolvieron todas mis dudas.",
+  },
+  {
+    name: "Carlos García",
+    message: "¡Altamente recomendado! Muy fácil de usar el sitio y el contacto fue claro.",
+  }
+];
+---
+
+<section class={styles.testimonialsSection}>
+  <h2>Testimonios</h2>
+  <div class={styles.testimonialsGrid}>
+    {testimonials.map((t) => (
+      <div class={styles.testimonialCard}>
+        <p class={styles.message}>“{t.message}”</p>
+        <p class={styles.name}>— {t.name}</p>
+      </div>
+    ))}
+  </div>
+</section>
