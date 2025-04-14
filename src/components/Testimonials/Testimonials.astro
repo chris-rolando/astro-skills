@@ -1,21 +1,6 @@
 ---
-// Testimonials.astro
 import styles from './Testimonials.module.css';
-
-const testimonials = [
-  {
-    name: "Juan Pérez",
-    message: "Excelente servicio, me respondieron muy rápido y fueron súper amables.",
-  },
-  {
-    name: "María López",
-    message: "El equipo fue muy profesional y resolvieron todas mis dudas.",
-  },
-  {
-    name: "Carlos García",
-    message: "¡Altamente recomendado! Muy fácil de usar el sitio y el contacto fue claro.",
-  }
-];
+import testimonials from '../../data/testimonials.json';
 ---
 
 <section class={styles.testimonialsSection}>
