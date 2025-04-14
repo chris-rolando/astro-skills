@@ -1,21 +1,46 @@
+/* global.css */
+
+:root {
+  --primary-color: #ff2c00;
+  --text-color-primary: #222;
+  --text-color-secondary: #444;
+  --background-color-light: #fdfdfd;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-size-base: 1rem; /* 16px */
+  --font-size-h2: 1.5rem; /* 24px */
+  --spacing-small: 0.25rem; /* 4px */
+  --spacing-medium: 0.5rem; /* 8px */
+  --spacing-large: 1rem; /* 16px */
+  --spacing-xl: 2rem; /* 32px */
+  --padding-small: 0.75rem; /* 12px */
+  --padding-medium: 1.25rem; /* 20px */
+  --padding-large: 2rem; /* 32px */
+  --margin-small: 0.25rem; /* 4px */
+  --margin-medium: 0.5rem; /* 8px */
+  --margin-large: 1rem; /* 16px */
+  --border-color-light: #ccc;
+  --border-radius-small: 4px;
+  --border-radius-large: 2rem;
+  --transition-duration: 0.3s;
+  --transition-easing: ease;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 3rem;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl);
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #fdfdfd;
+  background-color: var(--background-color-light);
 }
 
-.material-icons {
-  font-size: 1.5rem; /* Equivalente aproximado a 24px */
-  color: #ff2c00;
-  vertical-align: middle;
-}
+
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
 }
+
