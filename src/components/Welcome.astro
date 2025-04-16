@@ -1,14 +1,13 @@
 ---
 //Welcome.astro
-// # TODO: pasar este componente a un page | sent this component to a astro page?
-import "../styles/global.css";
-import ContactInfoCard from "../components/ContactInfoCard/ContactInfoCard.astro";
-import ContactForm from "../components/ContactForm/ContactForm.astro";
+
+// # TODO: En caso de ser necesario pasar este componente a una pagina.
+
 import Testimonials from "./Testimonials/Testimonials.astro";
+import styles from "./Welcome.module.css";
 ---
 
-<div class="container">
-    <ContactInfoCard />
-    <ContactForm />
+<div class={styles.container}>
+    
+    <Testimonials />
 </div>
-<Testimonials />
