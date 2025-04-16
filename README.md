@@ -21,6 +21,7 @@ testimonial/
 │   ├── assets/
 │   │   └── (Archivos estáticos como imágenes o íconos)
 │   ├── components/
+│   │   ├── Welcome.astro
 │   │   ├── Testimonials/
 │   │   │   ├── Testimonials.astro
 │   │   │   └── Testimonials.module.css
