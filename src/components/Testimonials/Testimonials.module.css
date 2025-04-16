@@ -27,6 +27,7 @@
   max-width: 300px;
   text-align: center;
   position: relative;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .avatar {
@@ -64,6 +65,6 @@
 .testimonialCard:hover {
   border-color: #999;
   outline: none;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: border-color 0.3s ease-in-out;
 }

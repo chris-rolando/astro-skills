@@ -1,28 +1,37 @@
 ---
 // Testimonials.astro
 
-/* TODO:  Actualiza los testimonios*/
+/* TODO: Los testimonios se cargan desde un archivo externo. */
+/* FIXME: La interface se puede integrar en este mismo component*/
 
-import testimonials from '../../data/testimonials.json';
-import styles from './Testimonials.module.css';
+import testimonialsData from "../../data/testimonials.json";
+import styles from "./Testimonials.module.css";
+import type { TestimonialsData } from "../../interfaces/Testimonial";
+
+const testimonials = testimonialsData as TestimonialsData;
 ---
 
 <section class={styles.testimonials}>
-    <h2>Testimonios</h2>
-    <div class={styles.testimonialsGrid}>
-      {testimonials.map((t) => (
+  <h2>Testimonios</h2>
+  <div class={styles.testimonialsGrid}>
+    {
+      testimonials.map((t) => (
         <div class={styles.testimonialCard}>
           <img src={t.image} alt={t.name} class={styles.avatar} />
           <p class={styles.message}>“{t.message}”</p>
           <div class={styles.rating}>
             {Array.from({ length: 5 }, (_, i) => (
-              <span class="material-icons" style={`color: ${i < t.rating ? 'var(--primary-color)' : '#ccc'}`}>
-                {i < t.rating ? 'star' : 'star_border'}
+              <span
+                class="material-icons"
+                style={`color: ${i < t.rating ? "var(--primary-color)" : "#ccc"}`}
+              >
+                {i < t.rating ? "star" : "star_border"}
               </span>
             ))}
           </div>
           <p class={styles.name}>— {t.name}</p>
         </div>
-      ))}
-    </div>
-  </section>
+      ))
+    }
+  </div>
+</section>
