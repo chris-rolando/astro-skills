@@ -1,10 +1,16 @@
 # Contact Info
 
-Un proyecto desarrollado con [Astro](https://astro.build) que incluye dos componentes principales: uno para mostrar información de contacto y otro para un formulario interactivo. También incorpora un mapa embebido de Google Maps.
+Hola, soy Chris. En este repositorio encontrarás un proyecto desarrollado con [Astro](https://astro.build) que incluye dos componentes principales: uno para mostrar información de contacto y otro para un formulario interactivo.
+
+El propósito de este proyecto es poner en práctica conceptos de la tecnología de manera divertida.
+
+Explora las diferentes ramas del proyecto para seguir el progreso y los cambios en la funcionalidad de la aplicación.
+
+Siéntete libre de clonar, explorar y contribuir con tus propias mejoras o sugerencias.
+
+¡Gracias por pasar por aquí!
 
 ## 🚀 Estructura del Proyecto
-
-La estructura del proyecto es la siguiente:
 
 ```plaintext
 /
@@ -17,47 +23,42 @@ La estructura del proyecto es la siguiente:
 │   ├── components/
 │   │   ├── Welcome.astro
 │   │   ├── ContactInfoCard/
-│   │   │   ├── [ContactInfoCard.astro](http://_vscodecontentref_/1)
-│   │   │   └── [ContactInfoCard.module.css](http://_vscodecontentref_/2)
+│   │   │   ├── ContactInfoCard.astro
+│   │   │   └── ContactInfoCard.module.css
 │   │   ├── ContactForm/
-│   │   │   ├── [ContactForm.astro](http://_vscodecontentref_/3)
-│   │   │   └── [ContactForm.module.css](http://_vscodecontentref_/4)
+│   │   │   ├── ContactForm.astro
+│   │   │   └── ContactForm.module.css
 │   ├── layouts/
-│   │   └── [MainLayout.astro](http://_vscodecontentref_/5)
+│   │   └── MainLayout.astro
 │   ├── pages/
 │   │   └── index.astro
 │   └── styles/
-│       ├── [global.css](http://_vscodecontentref_/6)
-│       └── [reset.css](http://_vscodecontentref_/7)
-├── [package.json](http://_vscodecontentref_/8)
-└── [README.md](http://_vscodecontentref_/9)
+│       ├── global.css
+│       └── reset.css
+├── package.json
+└── README.md
 ```
 
 ## 🌟 Componentes
-ContactInfoCard
+1. ContactInfoCard
 Este componente muestra información de contacto, incluyendo:
 
-Dirección física.
-Número de teléfono.
-Correo electrónico.
-Un mapa embebido de Google Maps.
-Ubicación del archivo:
-src/components/ContactInfoCard/ContactInfoCard.astro
+- Dirección física.
+- Número de teléfono.
+- Correo electrónico.
+- Un mapa embebido de Google Maps.
 
-ContactForm
+2. ContactForm
 Este componente es un formulario interactivo que permite a los usuarios enviar consultas. Incluye los siguientes campos:
 
-Nombre.
-Correo electrónico.
-Título.
-Mensaje.
-Ubicación del archivo:
-src/components/ContactForm/ContactForm.astro
+- Nombre.
+- Correo electrónico.
+- Título.
+- Mensaje.
 
 ## 🧞 Comandos
 Todos los comandos se ejecutan desde la raíz del proyecto:
 
-Comando	Acción
 pnpm install	Instala las dependencias del proyecto
 pnpm dev	Inicia el servidor de desarrollo en localhost:4321
 pnpm build	Genera el sitio para producción en ./dist/
@@ -70,16 +71,24 @@ Astro - Framework para construir sitios web rápidos.
 Material Symbols - Iconos utilizados en la información de contacto.
 
 ## 🛠️ Cómo usar
-Clona este repositorio:
+1. Clona este repositorio: 
+```bash
+git clone <URL_DEL_REPOSITORIO>
+cd contact-info
+```
 
-Instala las dependencias:
+2. Instala las dependencias:
+```bash
+pnpm install
+```
 
-Inicia el servidor de desarrollo:
+3. Inicia el servidor de desarrollo:
+```bash
+pnpm dev
+```
 
-Abre tu navegador en http://localhost:4321.
+4. Abre tu navegador en http://localhost:4321.
 
-## 📖 Documentación
-Para más información sobre Astro, consulta la documentación oficial.
 
 ## 📝 Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
