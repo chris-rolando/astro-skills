@@ -41,10 +41,3 @@
 .contact-info p:focus {
   color: var(--primary-color);
 }
-
-/* Estilo para iconos (si los usas directamente con esta clase aquí) */
-.material-icons {
-  font-size: var(--font-size-h2); /* 24px */
-  color: var(--primary-color);
-  vertical-align: middle;
-}
