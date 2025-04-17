@@ -1,14 +1,44 @@
 ---
 //Welcome.astro
-// # TODO: pasar este componente a un page | sent this component to a astro page?
-import "../styles/global.css";
-import ContactInfoCard from "../components/ContactInfoCard/ContactInfoCard.astro";
-import ContactForm from "../components/ContactForm/ContactForm.astro";
-import Testimonials from "./Testimonials/Testimonials.astro";
+
+// FIXME: update the repository name to astro-ui-components!
+// TODO: delete footer section when the project is finished!
 ---
 
-<div class="container">
-    <ContactInfoCard />
-    <ContactForm />
-</div>
-<Testimonials />
+<main>
+  <h1>Astro UI Components</h1>
+  <p>
+    Este proyecto contiene una colección de componentes de interfaz de usuario
+    reutilizables y personalizables. Cada componente está diseñado para ser
+    fácil de integrar y modificar, proporcionando una base sólida para construir
+    aplicaciones web modernas y atractivas.
+  </p>
+  <h2>Objetivo</h2>
+  <ul>
+    <li>Componentes listos para usar</li>
+    <li>Estilos personalizables y adaptables</li>
+    <li>Componentes modulares y reutilizables</li>
+    <li>Fácil integración</li>
+  </ul>
+</main>
+
+<footer>
+  <p>This project is under construction.</p>
+</footer>
+
+<style>
+  footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  footer p {
+    margin: 0.5rem 0;
+  }
+</style>
+
+
