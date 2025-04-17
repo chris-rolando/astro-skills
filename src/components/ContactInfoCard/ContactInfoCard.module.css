@@ -12,7 +12,7 @@
 }
 
 .contact-info p {
-  margin-bottom: calc(var(--spacing-small) * 3); /* 12px */
+  margin-bottom: calc(var(--spacing-small) * 3);
   font-size: var(--font-size-base);
   display: flex;
   align-items: center;
@@ -21,11 +21,9 @@
 }
 
 .contact-info span {
-  /* Para iconos dentro de .contact-info */
   color: var(--primary-color);
   margin-right: var(--spacing-large);
   font-size: 1.2rem;
-  /* Mantiene un tamaño específico si es necesario */
   vertical-align: middle;
 }
 
@@ -36,8 +34,6 @@
   height: 450px;
 }
 
-/* Estilo para el hover/focus del párrafo */
-.contact-info p:hover,
-.contact-info p:focus {
+.contact-info p:hover{
   color: var(--primary-color);
 }

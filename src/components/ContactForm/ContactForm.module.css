@@ -13,7 +13,7 @@
 }
 
 .form-section p {
-  margin-bottom: calc(var(--spacing-small) * 3); /* 12px */
+  margin-bottom: calc(var(--spacing-small) * 3);
   font-size: var(--font-size-base);
   display: flex;
   align-items: center;
@@ -60,9 +60,9 @@
 
 .form-section input:hover,
 .form-section textarea:hover,
-.form-section input:focus, /* Incluye el estado focus para consistencia */
+.form-section input:focus,
 .form-section textarea:focus {
-  border-color: #999; /* Un gris más oscuro */
-  outline: none; /* Opcional: Quita el outline predeterminado del navegador y estiliza el tuyo si lo deseas */
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* Un sutil resplandor */
+  border-color: #999;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
