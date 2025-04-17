@@ -1,14 +1,6 @@
 # Contact Info
 
-Hola, soy Chris. En este repositorio encontrarás un proyecto desarrollado con [Astro](https://astro.build) que incluye dos componentes principales: uno para mostrar información de contacto y otro para un formulario interactivo.
-
-El propósito de este proyecto es poner en práctica conceptos de la tecnología de manera divertida.
-
-Explora las diferentes ramas del proyecto para seguir el progreso y los cambios en la funcionalidad de la aplicación.
-
-Siéntete libre de clonar, explorar y contribuir con tus propias mejoras o sugerencias.
-
-¡Gracias por pasar por aquí!
+Este repositorio incluye dos componententes: uno para mostrar información de contacto y otro para un formulario interactivo.
 
 ## 🚀 Estructura del Proyecto
 
