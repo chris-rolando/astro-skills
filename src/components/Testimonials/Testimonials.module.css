@@ -1,14 +1,17 @@
 /*Testimonials.module.css*/
 
 .testimonials {
-  padding: var(--padding-xl);
+  padding: var(--padding-small);
   text-align: center;
+  min-width: 100vw;
+  width: 100vw;
+  background-color: var(--background-color-section);
 }
 
-.testimonials h2 {
-  font-size: var(--spacing-xl);
+h2 {
+  font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--margin-medium);
 }
 
 .testimonialsGrid {
@@ -35,7 +38,7 @@
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: var(--spacing-large);
+  margin-bottom: var(--spacing-medium);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -63,7 +66,7 @@
 }
 
 .testimonialCard:hover {
-  border-color: #999;
+  border-color: var(--hover-button-color);
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: border-color 0.3s ease-in-out;

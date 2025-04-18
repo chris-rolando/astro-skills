@@ -1,8 +1,17 @@
-# Testimonial Component
+# Astro UI Components | Testimonials
 
-Este repositorio incluye un componente diseñado para mostrar testimonios de usuarios sobre un producto o servicio.
+## Componentes disponibles en esta rama
 
-## 🚀 Estructura del Proyecto
+### Testimonials
+Un componente para mostrar una lista de testimonios o comentarios de los usuarios.
+- Imagen o avatar de usuario.
+- Nombre, reseña y calificación de usuario.
+- Utiliza datos provenientes del archivo testimonials.json.
+
+### Welcome
+Un componente de bienvenida que utiliza el componente Testimonials para mostrar reseñas.
+
+## Estructura del proyecto
 
 ```plaintext
 testimonial/
@@ -31,48 +40,3 @@ testimonial/
 ├── README.md
 └── LICENSE
 ```
-
-## 🌟 Componentes
-1. Testimonials
-
-Descripción: Este componente está diseñado para mostrar una lista de testimonios o comentarios de los usuarios. Utiliza datos provenientes del archivo testimonials.json ubicado en el fichero data. 
-El estilo está definidos en Testimonials.module.css.
-
-
-## 🧞 Comandos
-Todos los comandos se ejecutan desde la raíz del proyecto:
-
-pnpm install	Instala las dependencias del proyecto
-pnpm dev	Inicia el servidor de desarrollo en localhost:4321
-pnpm build	Genera el sitio para producción en ./dist/
-pnpm preview	Previsualiza el sitio generado localmente
-
-## 📦 Dependencias
-Este proyecto utiliza las siguientes dependencias principales:
-
-1. Astro: Framework para construir sitios web rápidos y modernos.
-2. CSS Modules: Para encapsular estilos específicos de los componentes.
-3. JSON: Para manejar los datos de los testimonios (archivo testimonials.json).
-
-## 🛠️ Cómo usar
-1. Clona este repositorio: 
-```bash
-git clone <URL_DEL_REPOSITORIO>
-cd contact-info
-```
-
-2. Instala las dependencias:
-```bash
-pnpm install
-```
-
-3. Inicia el servidor de desarrollo:
-```bash
-pnpm dev
-```
-
-4. Abre tu navegador en http://localhost:4321.
-
-
-## 📝 Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.

@@ -1,18 +1,18 @@
 ---
 // Testimonials.astro
 
-/* TODO: Los testimonios se cargan desde un archivo externo. */
-/* FIXME: La interface se puede integrar en este mismo component*/
+/* TODO: Testimonials are loaded from an external file */
+/* FIXME: The interface can be integrated into this same component.*/
 
 import testimonialsData from "../../data/testimonials.json";
-import styles from "./Testimonials.module.css";
 import type { TestimonialsData } from "../../interfaces/Testimonial";
+import styles from "./Testimonials.module.css";
 
 const testimonials = testimonialsData as TestimonialsData;
 ---
 
 <section class={styles.testimonials}>
-  <h2>Testimonios</h2>
+  <h2>Reseñas de nuestros usuarios</h2>
   <div class={styles.testimonialsGrid}>
     {
       testimonials.map((t) => (
