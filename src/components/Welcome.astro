@@ -1,11 +1,8 @@
 ---
 //Welcome.astro
-
-// FIXME: update the repository name to astro-ui-components!
-// TODO: delete footer section when the project is finished!
 ---
 
-<main>
+<main class="text">
   <h1>Astro UI Components</h1>
   <p>
     Este proyecto contiene una colección de componentes de interfaz de usuario
@@ -21,24 +18,22 @@
     <li>Fácil integración</li>
   </ul>
 </main>
-
-<footer>
-  <p>This project is under construction.</p>
-</footer>
-
 <style>
-  footer {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #f4f4f4;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555;
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-large);
+    background-color: var(--background-color-section);
   }
 
-  footer p {
-    margin: 0.5rem 0;
+  .text p {
+    max-width: 800px;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--text-color);
+    text-align: justify;
   }
 </style>
-
-

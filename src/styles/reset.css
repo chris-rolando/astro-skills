@@ -1,5 +1,5 @@
 /* src/styles/reset.css */
-/* Basado en: reset de Eric Meyer */
+/* From Eric Meyer */
 
 *,
 *::before,
@@ -9,7 +9,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -20,17 +21,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
