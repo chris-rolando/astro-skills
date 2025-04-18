@@ -11,7 +11,8 @@ interface HeroProps {
   buttonLabel: string;
 }
 
-const { heroImage, heroTitleText, heroDescriptionText, buttonLabel } = Astro.props as HeroProps;
+const { heroImage, heroTitleText, heroDescriptionText, buttonLabel } =
+  Astro.props as HeroProps;
 const imageUrl = typeof heroImage === "string" ? heroImage : heroImage.src;
 ---
 
@@ -20,7 +21,7 @@ const imageUrl = typeof heroImage === "string" ? heroImage : heroImage.src;
   style={`--hero-image: url(${imageUrl});`}
 >
   <div class={styles.heroText}>
-    <h1 class={styles.heroTitle}>{heroTitleText}</h1>
+    <h2 class={styles.heroTitle}>{heroTitleText}</h2>
     <p class={styles.heroDescription}>{heroDescriptionText}</p>
     <button class={styles.heroButton}>{buttonLabel}</button>
   </div>

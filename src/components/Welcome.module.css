@@ -4,8 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  background-color: var(--background-color-light);
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 @media (max-width: 768px) {

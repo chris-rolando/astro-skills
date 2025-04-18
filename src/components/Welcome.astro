@@ -1,17 +1,16 @@
 ---
 //Welcome.astro
 
-import Hero from './Hero/Hero.astro';
-import image from '../assets/images/hero.webp';
+import Hero from "./Hero/Hero.astro";
+import image from "../assets/images/hero.webp";
 import styles from "./Welcome.module.css";
 ---
 
 <div class={styles.container}>
-  <Hero heroImage={image.src}
-  heroTitleText="Titulo de la página"
-  heroDescriptionText="Aquí encontrarás todo lo que necesitas para comenzar."
-  buttonLabel="Comenzar"
+  <Hero
+    heroImage={image.src}
+    heroTitleText="Titulo de la página"
+    heroDescriptionText="Descripción de la página"
+    buttonLabel="Comenzar"
   />
 </div>
-
-
