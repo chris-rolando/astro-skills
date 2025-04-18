@@ -1,0 +1,28 @@
+/*ContactHeading.module.css*/
+
+.container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--margin-large);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--margin-medium);
+}
+
+p {
+margin-top: var(--margin-medium);
+margin-bottom: var(--margin-medium);
+}
+
+.underline {
+    max-width: 20%;
+    height: var(--spacing-small);
+    background-color: var(--primary-color);
+    margin: auto;
+    margin-top: var(--margin-small);
+}

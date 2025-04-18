@@ -2,7 +2,8 @@
 
 .contact-info {
   flex: 1;
-  padding: var(--padding-medium);
+  padding: var(--padding-small);
+  margin: var(--margin-large);
 }
 
 .contact-info h2 {
@@ -28,10 +29,17 @@
 }
 
 .contact-info iframe {
+  padding: var(--padding-large);
+  padding-left: 0;
   width: 100%;
   border: none;
   border-radius: var(--border-radius-large);
   height: 450px;
+  border-radius: var(--spacing-small);
+  border: 1px solid var(--border-color-light);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin: var(--margin-large);
+  
 }
 
 .contact-info p:hover{

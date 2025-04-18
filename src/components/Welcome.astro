@@ -1,14 +1,20 @@
 ---
 //Welcome.astro
 
-// # TODO: En caso de ser necesario pasar este componente a una pagina.
-
-import ContactInfoCard from "../components/ContactInfoCard/ContactInfoCard.astro";
+import ContactCard from "../components/ContactCard/ContactCard.astro";
 import ContactForm from "../components/ContactForm/ContactForm.astro";
+import ContactHeading from "./ContactHeading/ContactHeading.astro";
 import styles from "./Welcome.module.css";
 ---
+<ContactHeading
+  title="Contacto"
+  message="¿Como podemos ayudarte? por favor completa el formulario."
+/>
 
+<div class="parent-container">
+  
 <div class={styles.container}>
-    <ContactInfoCard />
-    <ContactForm />
+  <ContactCard />
+  <ContactForm />
+</div>
 </div>

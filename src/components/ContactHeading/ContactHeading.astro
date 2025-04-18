@@ -1,0 +1,31 @@
+---
+// ContactHeading.astro
+
+import styles from "./ContactHeading.module.css";
+
+export interface Props {
+  title: string;
+  message?: string;
+}
+
+const { title, message } = Astro.props;
+---
+
+<div class={styles.container}>
+  <div>
+    <h2>{title}</h2>
+    <div class={styles.underline}></div>
+    <p>{message}</p>
+  </div>
+</div>
+<style>
+
+  /* Contenedor padre */
+  .parent-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; /* Ajusta según sea necesario */
+  }
+  
+  </style>

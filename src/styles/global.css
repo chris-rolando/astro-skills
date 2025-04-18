@@ -1,39 +1,105 @@
 /* global.css */
 
 :root {
-  --primary-color: #ff2c00;
-  --text-color-primary: #222;
-  --text-color-secondary: #444;
-  --background-color-light: #fdfdfd;
+  /* Colors */
+  --primary-color: #FF6A00;
+  /*--primary-color: #ff2c00;*/
+  --secundary-color: #00574B;
+  --heading-color: #1A1A1A;
+  --text-color: #4A4A4A;
+  --text-contrast-color: #FFFFFF;
+  --background-color: #FAFAFA;
+  --background-color-section: #f4f4f4;
+  --border-color-light: #E0E0E0;
+  --hover-button-color: #CC5500;
+
+  /* Fonts */
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
-  --font-size-base: 1rem;
-  /* 16px */
-  --font-size-h2: 1.5rem;
-  /* 24px */
+  --font-size-base: 1.25rem;
+  --font-size-h2: 2.5rem;
+
+  /* Spacing */
   --spacing-small: 0.25rem;
-  /* 4px */
   --spacing-medium: 0.5rem;
-  /* 8px */
   --spacing-large: 1rem;
-  /* 16px */
   --spacing-xl: 2rem;
-  /* 32px */
+
+  /* Padding */
   --padding-small: 0.75rem;
-  /* 12px */
   --padding-medium: 1.25rem;
-  /* 20px */
   --padding-large: 2rem;
-  /* 32px */
+
+  /* Margins */
   --margin-small: 0.25rem;
-  /* 4px */
   --margin-medium: 0.5rem;
-  /* 8px */
   --margin-large: 1rem;
-  /* 16px */
-  --border-color-light: #ccc;
-  --border-radius-small: 4px;
-  --border-radius-large: 2rem;
+
+  /* Borders */
+  --border-radius: 0.5rem;
+
+  /* Shadows & Transitions */
   --transition-duration: 0.3s;
   --transition-easing: ease;
+}
+
+/* Body styling */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Optional basic button style */
+button {
+  background-color: var(--primary-color);
+  color: var(--text-contrast-color);
+  padding: var(--padding-small) var(--padding-large);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-easing);
+  
+}
+
+button:hover {
+  background-color: var(--hover-button-color);
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .heroImage {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    padding: var(--padding-medium);
+  }
+  .text p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
 }
