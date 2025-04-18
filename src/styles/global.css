@@ -8,7 +8,7 @@
   --text-color: #4A4A4A;
   --text-contrast-color: #FFFFFF;
   --background-color: #FAFAFA;
-  --background-color-section: #FFFFFF;
+  --background-color-section: #f4f4f4;
   --border-color-light: #E0E0E0;
   --hover-button-color: #CC5500;
 
@@ -66,4 +66,38 @@ button {
 
 button:hover {
   background-color: var(--hover-button-color);
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .heroImage {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    padding: var(--padding-medium);
+  }
+  .text p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
 }
