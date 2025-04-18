@@ -1,0 +1,27 @@
+---
+// Hero.astro
+
+import styles from "./Hero.module.css";
+import type { ImageMetadata } from "astro";
+
+interface HeroProps {
+  heroImage: string | ImageMetadata;
+  heroTitleText: string;
+  heroDescriptionText: string;
+  buttonLabel: string;
+}
+
+const { heroImage, heroTitleText, heroDescriptionText, buttonLabel } = Astro.props as HeroProps;
+const imageUrl = typeof heroImage === "string" ? heroImage : heroImage.src;
+---
+
+<section
+  class={`${styles.heroImage} ${styles.withOverlay}`}
+  style={`--hero-image: url(${imageUrl});`}
+>
+  <div class={styles.heroText}>
+    <h1 class={styles.heroTitle}>{heroTitleText}</h1>
+    <p class={styles.heroDescription}>{heroDescriptionText}</p>
+    <button class={styles.heroButton}>{buttonLabel}</button>
+  </div>
+</section>

@@ -1,0 +1,72 @@
+/* Hero.module.css */
+
+.heroImage {
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  min-height: 30vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  /* No definir background-image aquí, usar variable */
+}
+
+.withOverlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), var(--hero-image);
+}
+
+.heroText {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: var(--padding-large);
+  border-radius: var(--border-radius-small);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--margin-large);
+}
+
+p {
+  margin: var(--margin-large);
+  font-size: 1.25rem;
+  margin-bottom: var(--margin-xl);
+}
+
+button {
+  margin: var(--margin-large);
+  padding: var(--padding-small) var(--padding-medium);
+  font-size: 1.1rem;
+  border: none;
+  border-radius: var(--border-radius-small);
+  background-color: #f5f5f5;
+  color: #000;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-easing);
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Welcome.module.css */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: var(--background-color-light);
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,6 +1,6 @@
-# Testimonial Component
+# Hero Component
 
-Este repositorio incluye un componente diseñado para mostrar testimonios de usuarios sobre un producto o servicio.
+Este repositorio incluye un componente diseñado para mostrar un hero sobre un producto o servicio.
 
 ## 🚀 Estructura del Proyecto
 
@@ -53,26 +53,3 @@ Este proyecto utiliza las siguientes dependencias principales:
 1. Astro: Framework para construir sitios web rápidos y modernos.
 2. CSS Modules: Para encapsular estilos específicos de los componentes.
 3. JSON: Para manejar los datos de los testimonios (archivo testimonials.json).
-
-## 🛠️ Cómo usar
-1. Clona este repositorio: 
-```bash
-git clone <URL_DEL_REPOSITORIO>
-cd contact-info
-```
-
-2. Instala las dependencias:
-```bash
-pnpm install
-```
-
-3. Inicia el servidor de desarrollo:
-```bash
-pnpm dev
-```
-
-4. Abre tu navegador en http://localhost:4321.
-
-
-## 📝 Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
