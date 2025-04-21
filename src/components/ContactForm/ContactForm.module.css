@@ -1,64 +1,50 @@
 /* ContactForm.module.css */
 
-/* Contenedor padre */
 .parent-container {
   display: flex;
-  /*justify-content: center;*/
-  align-items: center;
-  height: 80vh;
-  /* Ajusta según sea necesario */
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 100%;
-  max-width: 100%;
-  flex-wrap: wrap;
+  flex: 1;
+  margin: var(--margin-large);
 }
 
 
-.container {
-  background-color: red;
-  display: flex;
-  gap: var(--spacing-xl);
-  padding: var(--spacing-small);
-  
+.container {  
+  background-color: var(--background-color-section); /* Color de fondo del contenedor */
+ flex-direction: column; /* Organiza los elementos en una columna */
+ gap: var(--spacing-medium); /* Espacio entre los elementos */
+  /*box-sizing: border-box;*/
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-medium); /* Espacio interno del contenedor */
+  margin: var(--margin-large);
+  /*gap: var(--spacing-small);*/
+  width: 100%;
   border-radius: var(--spacing-small);
   border: 1px solid var(--border-color-light);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  margin: var(--margin-large);
-  box-sizing: border-box;
-  justify-content: center;
-  /* Centra horizontalmente */
-  align-items: center;
-  flex: 1;
-  margin: var(--margin-large);
-  padding: var(--padding-small);
-  border-radius: var(--border-radius);
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-  font-size: var(--font-size-base);
+  box-shadow: 0 0 var(--spacing-medium) rgba(0, 0, 0, 0.5);
 }
 
 p {
   margin-bottom: var(--spacing-small);
   font-size: var(--font-size-base);
-  display: flex;
   align-items: center;
   color: var(--text-color);
   margin: var(--margin-small);
 }
 
-.form-section form {
+form {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-medium);
 }
 
-.form-section input,
-.form-section textarea {
+input, textarea {
   padding: var(--padding-small);
   border: 1px solid var(--border-color-light);
   border-radius: var(--border-radius-small);
   font-size: var(--font-size-base);
-  width: 80%;
+  width: 100%;
 }
 
 button {
@@ -71,10 +57,7 @@ button:hover {
   background-color: var(--hover-button-color);
 }
 
-.form-section input:hover,
-.form-section textarea:hover,
-.form-section input:focus,
-.form-section textarea:focus {
+input:hover, textarea:hover, input:focus, textarea:focus {
   border-color: var(--border-color-light);
   outline: none;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);

@@ -5,24 +5,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Ajusta según sea necesario */
 }
 
-
 .container {
+  background-color: var(--background-color-section);
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-xl);
+  margin: 0 auto;
+  gap: var(--spacing-small);
   padding: var(--spacing-small);
-  width: 80%; /* Puedes ajustar este valor según sea necesario */
-  min-height: 100%;
-  min-width: 100%;
-  background-color: var(--background-color-section);
+  box-sizing: border-box;
+  justify-content: center;
+  max-width: 1200px;
+  max-height: 90vh;
+  width: 100%;
   border-radius: var(--spacing-small);
   border: 1px solid var(--border-color-light);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  margin: var(--margin-large);
-  box-sizing: border-box;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  
 }

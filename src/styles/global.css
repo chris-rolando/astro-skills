@@ -3,18 +3,26 @@
 :root {
   /* Colors */
   --primary-color: #FF6A00;
-  /*--primary-color: #ff2c00;*/
+  --primary-accent-color: #ff2c00;
   --secundary-color: #00574B;
+  --alternate-color: #0D47A1;
   --heading-color: #1A1A1A;
   --text-color: #4A4A4A;
   --text-contrast-color: #FFFFFF;
   --background-color: #FAFAFA;
   --background-color-section: #f4f4f4;
+  --background-color-accent-section: #EDEDED;
+  /*--background-color-accent-section: #E8E8E8;*/
+  --background-color-section-primary: #FFE0B2;
+  --background-color-section-secundary: #E0F2F1;
+  --background-color-section-alternate: #E3F2FD;
   --border-color-light: #E0E0E0;
   --hover-button-color: #CC5500;
+  --hover-button-color-secundary:#00665A
+  --hover-button-color-alternate: #093170;
 
   /* Fonts */
-  --font-weight-bold: 700;
+  --font-weight-bold: 750;
   --font-weight-semibold: 600;
   --font-size-base: 1.25rem;
   --font-size-h2: 2.5rem;
@@ -51,7 +59,7 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* Optional basic button style */
@@ -63,7 +71,6 @@ button {
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: background-color var(--transition-duration) var(--transition-easing);
-  
 }
 
 button:hover {
