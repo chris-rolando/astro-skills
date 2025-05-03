@@ -1,42 +1,51 @@
 ---
+// Carousel.astro
+// This component creates a image carousel.
 
-interface SlideshowProps {
-  images: string[]
+// Interface for the props
+interface CarouselProps {
+  images: string[];
 }
 
-const { images = [] } = Astro.props as SlideshowProps;
+// Destructuring the images property
+const { images = [] } = Astro.props as CarouselProps;
 ---
 
-<section class="slideshow">
-  <div class="slides" id="slide-container">
-    {images.map((src, index) => (
-      <img
-        src={src}
-        alt={`Slide ${index + 1}`}
-        class="slide"
-        style={index === 0 ? 'display: block' : 'display: none'}
-      />
-    ))}
+<section class="carousel">
+  <div class="slides" id="carousel-container">
+    {
+      images.map((src, index) => (
+        <img
+          src={src}
+          alt={`Slide ${index + 1}`}
+          class="slide"
+          style={index === 0 ? "display: block" : "display: none"}
+        />
+      ))
+    }
   </div>
+
+  {/*TODO: sent this div to a new component */}
   <div class="controls">
     <button onclick="prevSlide()">⟨</button>
     <button onclick="nextSlide()">⟩</button>
   </div>
+
 </section>
 
 <script type="module">
   let currentSlide = 0;
   const slides = [];
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('slide-container');
-    slides.push(...container.querySelectorAll('.slide'));
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("carousel-container");
+    slides.push(...container.querySelectorAll(".slide"));
     showSlide(currentSlide);
   });
 
   function showSlide(index) {
     slides.forEach((slide, i) => {
-      slide.style.display = i === index ? 'block' : 'none';
+      slide.style.display = i === index ? "block" : "none";
     });
   }
 
@@ -50,11 +59,12 @@ const { images = [] } = Astro.props as SlideshowProps;
     showSlide(currentSlide);
   };
 
-  setInterval(nextSlide, 1000);
+  setInterval(nextSlide, 2000);
 </script>
 
+  {/*TODO: sent this to a .css */}
 <style>
-  .slideshow {
+  .carousel {
     position: relative;
     max-width: 600px;
     margin: auto;

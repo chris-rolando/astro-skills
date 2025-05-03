@@ -1,13 +1,16 @@
 ---
 //MainLayout.astro
 
+//Importing styles
 import "../styles/reset.css";
 import "../styles/global.css";
 
+//Interface for props
 interface Props {
   title: string;
 }
 
+//Destructuring the title property
 const { title } = Astro.props;
 ---
 

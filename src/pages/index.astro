@@ -1,22 +1,30 @@
 ---
 //index.astro
-import type { ImageMetadata } from "astro";
-import Layout from "../layouts/MainLayout.astro";
-import hero from "../assets/images/hero.webp";
-const title = "Slideshow en Astro";
-// index.astro
 
-import Slideshow from "../components/Slideshow.astro";
-import { imageMetadata } from "astro/assets/utils";
+//Importing layouts
+import Layout from "../layouts/MainLayout.astro";
+//Importing components
+import Carousel from "@/components/Carousel.astro";
+//Importing ImageMetadata
+import type { ImageMetadata } from "astro";
+//Importing images
+import hero from "../assets/images/hero.webp";
+
+//Setting the page title
+const pageTitle = "Carousel using Astro";
+//Importing images for the slideshow
 const images = [
   "/code.jpg",
   "/dogs.jpg",
   "/nature.jpg",
 ];
 
+//Creating an object for the hero image
   const heroImage: ImageMetadata = hero;
 ---
-<Layout title={title}>
-  <Slideshow images={images} />
+<Layout title={pageTitle}>
+  <Carousel images={images} />
 </Layout> 
-<img src={heroImage.src} alt="hero image">
+
+<h1>Test / Prueba</h1>
+<img src={heroImage.src} alt="image">
