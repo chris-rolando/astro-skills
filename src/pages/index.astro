@@ -1,12 +1,22 @@
 ---
 //index.astro
-
-import Welcome from "../components/Welcome.astro";
+import type { ImageMetadata } from "astro";
 import Layout from "../layouts/MainLayout.astro";
+import hero from "../assets/images/hero.webp";
+const title = "Slideshow en Astro";
+// index.astro
 
-const title = "Componentes UI de Astro";
+import Slideshow from "../components/Slideshow.astro";
+import { imageMetadata } from "astro/assets/utils";
+const images = [
+  "/code.jpg",
+  "/dogs.jpg",
+  "/nature.jpg",
+];
+
+  const heroImage: ImageMetadata = hero;
 ---
-
 <Layout title={title}>
-  <Welcome />
-</Layout>
+  <Slideshow images={images} />
+</Layout> 
+<img src={heroImage.src} alt="hero image">
