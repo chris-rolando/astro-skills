@@ -1,0 +1,16 @@
+/* carousel.css */
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+
+  

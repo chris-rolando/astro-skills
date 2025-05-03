@@ -4,11 +4,7 @@
 //Importing layouts
 import Layout from "../layouts/MainLayout.astro";
 //Importing components
-import Carousel from "@/components/Carousel.astro";
-//Importing ImageMetadata
-import type { ImageMetadata } from "astro";
-//Importing images
-import hero from "../assets/images/hero.webp";
+import Carousel from "@/components/Carousel/Carousel.astro";
 
 //Setting the page title
 const pageTitle = "Carousel using Astro";
@@ -18,13 +14,8 @@ const images = [
   "/dogs.jpg",
   "/nature.jpg",
 ];
-
-//Creating an object for the hero image
-  const heroImage: ImageMetadata = hero;
 ---
+
 <Layout title={pageTitle}>
   <Carousel images={images} />
 </Layout> 
-
-<h1>Test / Prueba</h1>
-<img src={heroImage.src} alt="image">
