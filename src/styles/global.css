@@ -80,16 +80,9 @@ iframe {
   h2 {
     font-size: 2rem;
   }
-
-  .heroImage {
-    height: 40vh;
-  }
 }
 
 @media (max-width: 768px) {
-  .heroText {
-    padding: var(--padding-medium);
-  }
 
   .text p {
     font-size: 1.125rem;
