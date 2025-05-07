@@ -30,9 +30,9 @@
   --padding-large: 2rem;
 
   /* Margins */
-  --margin-small: 0.25rem;
-  --margin-medium: 0.5rem;
-  --margin-large: 1rem;
+  --margin-small: 0.5rem;
+  --margin-medium: 1.25rem;
+  --margin-large: 2rem;
 
   /* Borders */
   --border-radius: 1rem;
