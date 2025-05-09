@@ -1,5 +1,7 @@
 ---
 //Welcome.astro
+
+import "./welcome.css";
 ---
 
 <main class="text">
@@ -28,54 +30,4 @@
   </ul>
 </main>
 
-<style>
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: var(--padding-large);
-  background-color: var(--background-color-section);
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 90%;
-  margin: auto;
-  margin-top: var(--spacing-large);
- }
- .text h1 {
-  font-size: 2rem;
-  color: var(--heading-color);
-  margin-bottom: var(--spacing-large);
-  color: var(--secundary-color);
- }
- .text h2 {
-  font-size: 1.75rem;
-  color: var(--heading-color);
-  margin-top: var(--spacing-large);
-  color: var(--heading-color)
- }
- .text p {
-  max-width: 800px;
-  width: 100%;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  color: var(--text-color);
-  text-align: justify;
-  margin: 0;
-  margin-top: var(--spacing-medium);
- }
- .text ul {
-  list-style-type: none;
-  padding: 0;
- }
- .text ul li {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  color: var(--text-color);
-  margin-bottom: var(--spacing-small);
- }
- .text br {
-  margin-bottom: var(--spacing-large);
- }
-  </style>
   
